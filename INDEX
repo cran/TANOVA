@@ -1,0 +1,21 @@
+ ----------------------------------------------------------
+| TIME COURSE ANALYSIS OF VARIANCE FOR MICROARRAY (TANOVA) |
+ ----------------------------------------------------------
+
+data.form -format data into appropriate format for TANOVA
+design.matrix -generate design matrix for ANOVA test
+F.stat.null/F.stat.null2 -generate bootstrap null distribution of F-statistic
+F.stat/F.stat2 -compute the F-statistic of ANOVA
+fdr.table -compute FDR table
+tanova - main function for TANOVA
+gene.classifier1/gene.classifier2/gene.classifier3 -TANOVA for non-time course/longitutide/cross-sectional data respectively
+group.ix -array index in the data matrix for each combination of factor levels
+ls.estimate -compute the least square estimate
+NANOVA.test/NANOVA.test2/NANOVA.test3 -perform Non-parametric analysis of variance (NANOVA) for TANOVA
+prior.sigma/prior.SIGMA -compute the prior of covariance matrix
+proj.data -compute time course projected data
+proj.dir/proj.dir2 -estimation of projection direction
+sig.number -count the number of significant genes in the FDR table at a specified cutoff
+sigma.hat -estimate the covariance matrix
+trigammaInverse -compute the trigamma inverse
+TANOVAmanual -view TANOVA PDF manual
